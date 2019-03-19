@@ -1,13 +1,14 @@
 class StoriesController < ApplicationController
 
-  get '/stories/new' do
-    erb :new
-  end
+    get '/stories' do
+      erb :"stories/new"
+    end
 
-  post '/stories' do
-    story = Story.new(params)
-    story.save
-    redirect "/stories/#{story.id}"
-  end
+    post '/stories' do
+      story = story.new(params)
+      story.save
+      redirect "/stories/#{story.story_id}"
+    end
+
 
 end
