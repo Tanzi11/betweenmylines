@@ -16,4 +16,5 @@ class StoriesController < ApplicationController
       erb :"stories/stories"
     end
 
+
 end
