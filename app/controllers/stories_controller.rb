@@ -16,5 +16,9 @@ class StoriesController < ApplicationController
       erb :"stories/stories"
     end
 
+    get '/stories/:id' do
+      @story = Story.find_by(params[:story_id])
+      erb :"stories/show_story"
+    end
 
 end
