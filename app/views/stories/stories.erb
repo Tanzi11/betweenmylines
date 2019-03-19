@@ -1,1 +1,8 @@
 <h1>stories</h1>
+<% @stories.each do |story| %>
+  <h3>title: <%= story.title %></h3>
+  <h3>description: <%= story.description %> </h3>
+  <a href="stories/show_story">
+  <IMG src<%=story.visual_content %> ALT= "story" >
+    </a>
+<% end %>
