@@ -10,5 +10,5 @@ Run shotgun in the terminal and you should go to the local host provided. The ap
 Built with: Sinatra
             Ruby
             
-# Licesne
+# License
 MIT
